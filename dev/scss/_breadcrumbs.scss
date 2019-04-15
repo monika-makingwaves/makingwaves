@@ -1,0 +1,24 @@
+.breadcrumbs-container {
+  padding: 20px 0;
+  background: #f3f3f3;
+  .breadcrumbs {
+    li {
+      display: inline-block;
+      a {
+        font-weight: 700;
+      }
+      &:last-child {
+        a {
+          font-weight: 400;
+        }
+      }
+      + li {
+        &:before {
+          content: "/\00a0";
+          margin-left: 3px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}

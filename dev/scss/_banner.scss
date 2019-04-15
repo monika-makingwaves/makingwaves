@@ -1,0 +1,19 @@
+.banner-container {
+  &.main-page-banner-container {
+    height: calc(100vh - 100px);
+    background: url(../img/banners/main.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #1d0202;
+    h1 {
+      text-align: left;
+    }
+  }
+  &.sub-page {
+    height: 300px;
+    background: url(../img/banners/main.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

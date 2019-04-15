@@ -1,0 +1,126 @@
+.header-top {
+  background: #fff;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+.header__menu {
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  li {
+    &:last-child {
+      .menu__el {
+        margin-right: 0;
+        @media only screen and (max-width: 991px) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .menu__el {
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+    font-weight: 600;
+    &.active,
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+
+a#toggle-menu {
+  position: absolute;
+  top: 39px;
+  right: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  z-index: 150;
+  display: none;
+  background: transparent;
+  @media only screen and (max-width: 991px) {
+    display: block;
+  }
+  span {
+    display: inline-block;
+    vertical-align: -5px;
+    width: 32px;
+    &:before,
+    &:after {
+      content: '';
+    }
+    &:before,
+    &:after,
+    i {
+      display: block;
+      border-radius: 4px;
+      height: 4px;
+      background: #000;
+
+      -webkit-transition: background-color 0.4s, -webkit-transform 0.4s, opacity 0.4s;
+      transition: background-color 0.4s, transform 0.4s, opacity 0.4s;
+
+    }
+    i {
+      margin: 5px 0;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+
+    }
+  }
+}
+
+.menu-open {
+  overflow: hidden;
+  a#toggle-menu {
+    right: 35px;
+    span {
+      i {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+      }
+      &:before {
+        -webkit-transform: translate(-1px, 8px) rotate(-45deg) scale(1, 1);
+        transform: translate(-1px, 8px) rotate(-45deg) scale(1, 1);
+        margin-left: 0;
+      }
+      &:after {
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+        opacity: 0;
+      }
+    }
+  }
+  .header__menu {
+    @media only screen and (max-width: 991px) {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      .menu-container {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+      }
+    }
+  }
+}
