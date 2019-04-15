@@ -1,5 +1,5 @@
-Z pocz¹tkowego za³o¿enia chcia³em zrobiæ onepager, jednak¿e to rozwi¹zanie pod SEO nie zdaje egzaminu. Dlatego postanowi³em rozbudowæ stronê poprzez dodanie podstron, tak aby uzyskaæ linki, jak i mo¿liwoœæ dodawania wartoœciowej treœci.
-Dodatkowo nale¿a³oby jeszcze:
+Z pocz¹tkowego za³o¿enia chcia³em zrobiæ onepager, jednak¿e to rozwi¹zanie pod SEO nie zdaje egzaminu. Dlatego postanowi³em rozbudowæ stronê poprzez dodanie podstron, tak aby uzyskaæ linki, jak i mo¿liwoœæ dodawania wartoœciowej treœci. Mo¿na wdro¿yæ dodatkowe rozwi¹zania np. (carusel czy counter JavaScript).
+Aby zoptymalizowaæ stronê nale¿a³oby jeszcze:
 •	Tag <title> dla ka¿dej podstrony, oraz meta tagi.
 •	Podaæ s³owa kluczowe.
 •	Adresy URL, nice URL (nie za d³ugie, bez znaków specjalnych, tak aby dobrze informowa³ o zawartoœci strony).
@@ -7,4 +7,4 @@ Dodatkowo nale¿a³oby jeszcze:
 •	Uwy¿anie nag³ówków H1, H2..., czy strong.
 •	Doda³em strony tekstowe (mog¹ to byæ strony produktów czy te¿ artyku³ów), gdzie mo¿na szczegó³owo opisaæ dany temat. U¿ytkownik bêdzie móg³ dowiedzieæ siê wiêcej, a roboty uznaj¹ stronê za bardziej wartoœciow¹.
 •	Dodaæ social media.
-•	Mo¿na jeszcze zminifikowaæ pliki JS, CSS, HTML i z cachowac.
+•	Mo¿na jeszcze zminifikowaæ pliki JS, CSS u¿yæ cache.
